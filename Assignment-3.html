@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>
+<p align="center">Awesome online videos
+<img src="sample1.jpg" width="150px" height="100px" align="middle" ></p> </h1>
+<br><br>
+
+<hr>
+<video controls="true"  id="myVid" class="myVid">
+    <source src="https://www.youtube.com/watch?v=_YsLsB28j8c" type="video/mp4" />
+</video>
+<button onclick="playVid()" type="button">Play Video</button>
+<button onclick="pauseVid()" type="button">Pause Video</button><br> 
+
+<script>
+    var vid = new MediaElementPlayer('#myVid');
+function playVid() { 
+    vid.play(); 
+} 
+
+function pauseVid() { 
+    vid.pause(); 
+} 
+</script> 
+
+</body> 
+</html>
+

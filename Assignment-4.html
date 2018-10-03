@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+<script>
+window.onload = function () {
+var chart = new CanvasJS.Chart("chartContainer", 
+{
+	title:{
+		text: "Batting Statistics"
+	},
+	axisX:{
+		title:"Overs",
+		interval:1
+		},
+	axisY:{
+		title:"runs",
+		includeZero: false
+	},
+	data: [{        
+		type: "line",       
+		dataPoints: [
+			{x:5,  y: 40 },
+			{x:10,  y: 75},
+			{x:15, y: 140}
+		]
+	}]
+});
+chart.render();
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
